@@ -32,17 +32,12 @@ def letter_frequency_sorted_list(char_dict):
     return list_of_chars_and_counts
 
 
-
-            
-
-
 def book_report(book_path):
     book_text = get_book_text(book_path)
     book_word_count = word_count(book_text)
     book_character_count = character_counter(book_text)
     book_letter_sorted_list = letter_frequency_sorted_list(book_character_count)
     
-
     print(f"--- Begin report of {book_path} ---")
     print(f"{book_word_count} words found in the document")
     print("\n")
